@@ -52,7 +52,13 @@ brython({debug:1, pythonpath:['/static/','/downloads/py/']});
 --></p>
 <!-- 利用 html 建立一個 id="btn1" 的按鈕 -->
 <p><button id="btn1">取使用者輸入</button></p>
-<div id="brython_div"></div>
+<p>feedback : 加入新把戲 !</p>
+<p>學習到如何寫 html 的 button</p>
+<p>step1 : 賦予 id (功用為呼叫後面的函式)</p>
+<p>&lt;p&gt;&lt;button <span style="color: #ff0000;">id</span>="btn1"&gt;取使用者輸入&lt;/button&gt;&lt;/p&gt;</p>
+<p>呼叫函式 :  document["btn1"].bind('click', get_input)</p>
+<p>document : 取到id應對的位置"btn1" 透過 id 來獲取元件所在位置</p>
+<p>click : 點擊後呼叫函式</p>
 <p>
 <script type="text/python">
 from browser import html, document
