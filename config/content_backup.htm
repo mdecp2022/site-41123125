@@ -4,7 +4,9 @@
 <p>個人github倉儲:<a href="https://github.com/mdecp2022/site-41123125">https://github.com/mdecp2022/site-41123125</a></p>
 <p>個人動態網站:<a href="https://mdecp2022.github.io/site-41123125/content/index.html">https://mdecp2022.github.io/site-41123125/content/index.html</a></p>
 <p>考試網站:<a href="https://exam.cycu.org/public/code/tce_login.php">exam.cycu.org</a></p><h1>HW</h1>
-<h2>w13</h2><h2>w12</h2>
+<h2>w5</h2>
+<p> 亂數模組 :</p>
+<p><a href="https://mdecp2022.github.io/site-41123125/content/Brython.html?src=https://gist.githubusercontent.com/41123125/2f714774b92263eb23efaa1a1cad334a/raw/8435239079581b704b59b8aa6a5b5d8f3a7bab6c/%2523%2520(w5)%2520random_garbled">w5 password_generator</a></p><h2>w13</h2><h2>w12</h2>
 <p><img alt="" height="48" src="https://cdn.discordapp.com/emojis/705655611546796033.gif?size=96&amp;quality=lossless" width="48"/><img alt="" height="48" src="https://cdn.discordapp.com/emojis/705655611546796033.gif?size=96&amp;quality=lossless" width="48"/><img alt="" height="48" src="https://cdn.discordapp.com/emojis/705655611546796033.gif?size=96&amp;quality=lossless" width="48"/></p>
 <p><a href="https://mdecp2022.github.io/site-41123125/content/cp2022.html?src=https://gist.githubusercontent.com/41123125/8fdefbee315cafa0e7ad923b92f01558/raw/38305e3dfa552d88218dbce251cfff430994560d/w12_hw-1.py">hw 1st practice</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
@@ -52,7 +54,13 @@ brython({debug:1, pythonpath:['/static/','/downloads/py/']});
 --></p>
 <!-- 利用 html 建立一個 id="btn1" 的按鈕 -->
 <p><button id="btn1">取使用者輸入</button></p>
-<div id="brython_div"></div>
+<p>feedback : 加入新把戲 !</p>
+<p>學習到如何寫 html 的 button</p>
+<p>step1 : 賦予 id (功用為呼叫後面的函式)</p>
+<p>&lt;p&gt;&lt;button <span style="color: #ff0000;">id</span>="btn1"&gt;取使用者輸入&lt;/button&gt;&lt;/p&gt;</p>
+<p>呼叫函式 :  document["btn1"].bind('click', get_input)</p>
+<p>document : 取到id應對的位置"btn1" 透過 id 來獲取元件所在位置</p>
+<p>click : 點擊後呼叫函式</p>
 <p>
 <script type="text/python">
 from browser import html, document
