@@ -141,38 +141,20 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w12-1 << <a href='w12-1.html'>Previous</a> <a href='w6.html'>Next</a> >> w6<br /><h1>w12</h1>
-<p></p>
-<p><a href="https://mdecp2022.github.io/site-41123125/content/cp2022.html?src=https://gist.githubusercontent.com/41123125/8fdefbee315cafa0e7ad923b92f01558/raw/38305e3dfa552d88218dbce251cfff430994560d/w12_hw-1.py">hw 1st practice</a></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-print(type(user_input_temp))</pre>
-<pre></pre>
-<p><a href="https://mdecp2022.github.io/site-41123125/content/cp2022.html?src=https://gist.githubusercontent.com/41123125/a300d0780a2dd5e7d50ec6787936ca6c/raw/8d9bca4fd8af395f0c59259dbb6df7a9cfc7ab69/w12_hw-2.py">hw 2nd practice</a></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-print(type(user_input_temp))
-# 到這裡已知利用 input() 函式將傳回字串, 接著以 float() 將字串轉為浮點數
-user_input_temp = float(user_input_temp)
-# 因為攝氏溫度乘上 9/5 之後再加上 32 就可以得到對應的華氏溫度值
-Fahrenheit = (user_input_temp*9/5) + 32
-# 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
-# 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
-print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
-<p></p>
-<p>feedback : hw1 : 設定變數, 印出所輸入之字串 結果為 &lt;class 'str'&gt;</p>
-<p></p>
-<p><span style="color: #000000;">複製 code 到個人網站時 使用 &lt;/&gt; 的功能 ( 選擇該<span style="color: #ff0000;">程式語言</span> )</span></p>
-<p><span style="color: #000000;"></span></p>
-<p><span style="color: #000000;">預加入新的 html (以<span style="color: #ff0000;">並列</span>功能)<span style="color: #000000;"> 以 w12-1 為例  因為 : 在 w12 的位階為 &lt;h2&gt;w12&lt;/h2&gt;</span></span></p>
-<p><span style="color: #000000;"><span style="color: #000000;">所以 : 預使並列 <span style="color: #ff0000;">就輸入不同字串並改成一樣位階</span> 即可<span style="color: #ff0000;">並列</span> &lt;h2&gt;<span style="color: #ff0000;">w12-1</span>&lt;/h2&gt;</span></span></p>
-<p><span style="color: #000000;"><span style="color: #000000;"></span></span></p>
-<p><span style="color: #000000;">又說明了一次如何在字串加上超連結</span></p>
-<p><span style="color: #000000;">一步一步慢慢跟 還是可以的</span></p>
-<p><span style="color: #000000;">註 :<span style="color: #ff0000;"> str</span> 代表<span style="color: #ff0000;">字串</span></span></p>
-<br />w12-1 << <a href='w12-1.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
+    <div id="tipue_search_content">HW << <a href='HW.html'>Previous</a> <a href='w15-2.html'>Next</a> >> w15-2<br /><h1>w17</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def OuTpUt(start=1, end=10):
+    sum = 0
+    #start = 1
+    #end = 10
+    for i in range(start, end+1, 1):
+        sum = sum + i
+        #print(i)
+    print("從 "+str(start)+" 加到 "+str(end)+" 等於 "+str(sum))
+    
+OuTpUt(1,10)
+OuTpUt(5,500)</pre>
+<p><br/>def : 建立函式<br/>sum : 總和<br/><br/>for i in range(10):<br/><br/>output:豎著列出0~9<br/><br/>因為range(起始值默認0, 10(列出項數), 增量默認為1)<br/><br/>for 迴圈下行要縮排(TAB), 因為不能和該式同個位階</p>
+<p>end+1 代表要他列出從0~10</p><br />HW << <a href='HW.html'>Previous</a> <a href='w15-2.html'>Next</a> >> w15-2</div>
         
     <!-- footer -->
       <div class="container">
