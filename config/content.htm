@@ -18,8 +18,10 @@
     
 OuTpUt(1,10)
 OuTpUt(5,500)</pre>
-<p><br/>def : 建立函式<br/>sum : 總和<br/><br/>for i in range(10):<br/><br/>output:豎著列出0~9<br/><br/>因為range(起始值默認0, 10(列出項數), 增量默認為1)<br/><br/>for 迴圈下行要縮排(TAB), 因為不能和該式同個位階</p>
-<p>end+1 代表要他列出從0~10</p><h2>w15-2</h2>
+<p><br/>def : 建立函式<br/>sum : 總和<br/><br/>for i in range(10):<br/>output:豎著列出0~9<br/>因為range(<span style="color: #ff0000;">起始值<span style="color: #000080;">默認為0</span></span>, 10(列出項數), <span style="color: #ff0000;">增量</span><span style="color: #000080;">默認為1</span>)<br/>for 迴圈下行要<span style="color: #ff0000;"><strong>縮排</strong></span>(TAB), 因為<strong><span style="color: #ff0000;">不能和迴圈同位階</span></strong><br/>end+1 代表要他列出從0~10</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import keyword
+print(keyword.kwlist)</pre>
+<p>列出keyword<span style="background-color: #ffffff; color: #ff0000;"><strong>(python內建文字, 不可作為變數)</strong></span><br/>['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']</p><h2>w15-2</h2>
 <p><a href="https://gist.githubusercontent.com/41123125/cf053900419fe6ce6c34a0e1f9b27ab3/raw/2cbe3b1d8bc94c470388785364bb26ae9a67fc30/w15-2%2520%25E8%25A1%258C%25E8%25B5%25B0%25E7%259A%2584%25E7%25B6%25A0%25E8%2589%25B2%25E5%259C%2596%25E5%25A1%258A">原範例</a>(繞圓走的綠色圖塊)</p>
 <p><a href="https://mdecp2022.github.io/site-41123125/content/cp2022.html?src=https://gist.githubusercontent.com/41123125/cf053900419fe6ce6c34a0e1f9b27ab3/raw/2cbe3b1d8bc94c470388785364bb26ae9a67fc30/8%25E8%2587%25AA%25E8%25B5%25B0">8自走</a>(作業)</p>
 <p>feedback: <br/>以"nowx為x方向，nowy為y軸"的概念來控制方塊的行動<br/>將綠色方塊變成從 (1, 1) 出發, 向右行走至 (8, 1) 之後, 轉向下行走, 至底部之後向右行走至最右端(15, 15) 之後, 轉而向上行走至 (15, 8) 之後向左走至最左端後向上行走至起始點 (1, 1) 後, 進行迴圈.</p>
