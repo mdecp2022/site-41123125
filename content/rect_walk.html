@@ -262,22 +262,25 @@ def draw():
 
 def walk():
     global stepx, stepy
-    # 向下
-    if nowy < hnum and nowx == 1:
-        stepx = 0
-        stepy = 1
-    # 向右
-    elif nowx < wnum and nowy == hnum:
+       
+    if nowx == 1 and nowy == 1:
         stepx = 1
-        stepy = 0
-    # 向上
-    elif nowy == hnum and nowx == wnum:
+        stepy = 0      
+    elif nowy == 1 and nowx == 8:
+        stepx = 0
+        stepy = 1      
+    elif nowy == 15 and nowx == 8:
+        stepx = 1
+        stepy = 0       
+    elif nowx == 15 and nowy == 15:
+        stepx = 0
+        stepy = -1  
+    elif nowy == 8 and nowx == 15:
+        stepx = -1
+        stepy = 0      
+    elif nowy == 8 and nowx == 1:
         stepx = 0
         stepy = -1
-    # 向左
-    elif nowx == wnum and nowy == 1:
-        stepx = -1
-        stepy = 0
         
 # 每隔短暫時間即呼叫執行一次的函式
 def game():
